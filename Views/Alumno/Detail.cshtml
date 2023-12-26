@@ -1,0 +1,22 @@
+@model Alumno
+@{
+
+}
+
+<h2>Detalle de Alumno</h2>
+
+
+<h3>Nro Orden</h3>
+<p>@Model.Id</p>
+<h3>Nombre</h3>
+<p>@Model.Nombre</p>
+<h3>Apellido</h3>
+<p>@Model.Apellido</p>
+<h3>Documento</h3>
+<p>@Model.Dni</p>
+<h3>Fecha de nacimiento</h3>
+<p>@Model.FechaNacimiento</p>
+<h3>Domicilio</h3>
+<p>@Model.Domicilio</p>
+
+<a asp-action="Index" class="btn btn-info">Volver</a>

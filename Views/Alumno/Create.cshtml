@@ -1,0 +1,32 @@
+@model Alumno
+@{
+
+}
+
+<h2>Datos a Agregar</h2>
+
+<form method="post" asp-action="OnPostCreate">
+    <div class="mb-3">
+        <label asp-for="Id" class="form-label"></label>
+        <input type="text" asp-for="Id" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Nombre" class="form-label"></label>
+        <input type="text" asp-for="Nombre" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Apellido" class="form-label"></label>
+        <input type="text" asp-for="Apellido" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Dni" class="form-label"></label>
+        <input type="number" asp-for="Dni" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Domicilio" class="form-label"></label>
+        <input type="text" asp-for="Domicilio" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-info">Guardar</button>
+</form>
